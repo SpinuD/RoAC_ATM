@@ -37,8 +37,8 @@ namespace ROARMY
             SqlCommand comanda = new SqlCommand(querry, conn);
             comanda.Parameters.AddWithValue("@ID", a+1);
             comanda.Parameters.AddWithValue("@data", TextBox4.Text);
-            comanda.Parameters.AddWithValue("@nrstud", TextBox3.Text);
-            comanda.Parameters.AddWithValue("@comp", TextBox2.Text);
+            comanda.Parameters.AddWithValue("@nrstud", TextBox2.Text);
+            comanda.Parameters.AddWithValue("@comp", TextBox3.Text);
 
             int nr_row_aff = comanda.ExecuteNonQuery();
             if (nr_row_aff==1)
